@@ -1,16 +1,12 @@
 <?php
-###########################
-#           Main          #
-###########################
+
 $title = "Nine"; //Your site title here! P.S: this is what shows up in your browser tab!
 $songcount = "5"; //Number of songs you've put in /songs. Review the folder upon download, songs must be sequential by number.
 $name = "Nine"; //What name do you want to appear on your page?
 $backgroundimage = ""; //Location of the background image(if applicable)!
 $backgroundcolor = "white"; //Only change this if you do not plan to use an image. If using an image, change this setting to "inherit".
 
-###########################
-#          Links          #
-###########################
+
 $url1title = "Instagram"; //Your first external link's title? (e.g. Instagram, Twitter)
 $url1 = "#"; //The actual URL to the above link!
 
@@ -23,12 +19,7 @@ $url3 = "#"; //The actual URL to the above link!
 $divider = "~"; // The divider between your links!
 
 
-/*
-To modify the matrix colors, go to /assets/js/custom.ms.js (Change on refresh is disabled by default)
-To modify the glitch colors, go to line 103 and the subsequential.
-
-*/
-//Don't Touch!
+]
 $RAND = rand(1,$songcount);
 ?>
 <html lang="en">
@@ -36,7 +27,7 @@ $RAND = rand(1,$songcount);
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title><?php echo $title;?></title>
+    <title>Website Test</title>
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
 </head>
@@ -47,6 +38,8 @@ $RAND = rand(1,$songcount);
 <audio id="music" preload="true" loop autoplay>
 <source src="songs/<?php echo($RAND); ?>.mp3">
 </audio>
+
+<h1>Creighton Fowler</h1>
 
 <!-- VOLUME + PLAY BUTTON -->
 <div class="trans">
@@ -195,10 +188,8 @@ a:hover {
   <body>
     <div id="sound-btn"></div>
 <div id="container">
-  <div class="glitch" data-text="<?php echo $name;?>"><?php echo $name;?></div>
   <br />
   <center>
 </div>
-<h1>Find me at <a href="<?php echo $url1; ?>"><?php echo $url1title; ?></a> <?php echo $divider; ?> <a href="<?php echo $url2; ?>"><?php echo $url2title; ?></a> <?php echo $divider; ?> <a href="<?php echo $url3; ?>"><?php echo $url3title; ?></a>
 </body>
 </html>
